@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery - Rotating Style</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="image-container">
+      <!-- Dynamically include spans/images -->
+      <span style="--i: 1"><img src="images/bg1.jpg" alt="Image 1" /></span>
+      <span style="--i: 2"><img src="images/bg2.jpg" alt="Image 2" /></span>
+      <span style="--i: 3"><img src="images/bg3.jpg" alt="Image 3" /></span>
+      <span style="--i: 4"><img src="images/bg4.jpg" alt="Image 4" /></span>
+      <span style="--i: 5"><img src="images/bg5.jpg" alt="Image 5" /></span>
+      <span style="--i: 6"><img src="images/bg6.jpg" alt="Image 6" /></span>
+      <span style="--i: 7"><img src="images/bg7.jpg" alt="Image 7" /></span>
+      <span style="--i: 8"><img src="images/bg8.jpg" alt="Image 8" /></span>
+      <span style="--i: 9"><img src="images/bg9.jpg" alt="Image 9" /></span>
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="prev">Prev</button>
+      <button class="btn" id="next">Next</button>
+    </div>
+
+    <div class="full-view hidden">
+      <button class="nav-btn" id="close">X</button>
+      <button class="nav-btn" id="prev-full">←</button>
+      <img src="" alt="Full View" id="full-image" />
+      <button class="nav-btn" id="next-full">→</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
